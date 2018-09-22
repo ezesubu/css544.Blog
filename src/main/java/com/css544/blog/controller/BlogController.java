@@ -19,6 +19,7 @@ import java.util.Optional;
 @Controller
 public class BlogController {
 
+
     private final UserService userService;
 
     private final PostService postService;
@@ -28,6 +29,8 @@ public class BlogController {
         this.userService = userService;
         this.postService = postService;
     }
+
+
 
     @RequestMapping(value = "/blog/{username}", method = RequestMethod.GET)
     public String blogForUsername(@PathVariable String username,

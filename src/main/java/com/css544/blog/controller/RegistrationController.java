@@ -1,7 +1,8 @@
 package com.css544.blog.controller;
 
-import com.reljicd.model.User;
-import com.reljicd.service.UserService;
+import com.css544.blog.service.UserService;
+import com.css544.blog.model.User;
+import com.css544.blog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
