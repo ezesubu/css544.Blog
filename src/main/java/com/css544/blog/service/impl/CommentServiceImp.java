@@ -1,8 +1,8 @@
-package com.reljicd.service.impl;
+package com.css544.blog.service.impl;
 
-import com.reljicd.model.Comment;
-import com.reljicd.repository.CommentRepository;
-import com.reljicd.service.CommentService;
+import com.css544.blog.model.Comment;
+import com.css544.blog.repository.CommentRepository;
+import com.css544.blog.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

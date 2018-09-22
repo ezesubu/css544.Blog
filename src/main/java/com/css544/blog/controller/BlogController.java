@@ -1,10 +1,10 @@
-package com.reljicd.controller;
+package com.css544.blog.controller;
 
-import com.reljicd.model.Post;
-import com.reljicd.model.User;
-import com.reljicd.service.PostService;
-import com.reljicd.service.UserService;
-import com.reljicd.util.Pager;
+import com.css544.blog.model.Post;
+import com.css544.blog.model.User;
+import com.css544.blog.service.PostService;
+import com.css544.blog.service.UserService;
+import com.css544.blog.util.Pager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;

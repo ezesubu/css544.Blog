@@ -1,11 +1,12 @@
-package com.reljicd.controller;
+package com.css544.blog.controller;
 
-import com.reljicd.model.Comment;
-import com.reljicd.model.Post;
-import com.reljicd.model.User;
-import com.reljicd.service.CommentService;
-import com.reljicd.service.PostService;
-import com.reljicd.service.UserService;
+
+import com.css544.blog.model.Comment;
+import com.css544.blog.model.Post;
+import com.css544.blog.model.User;
+import com.css544.blog.service.CommentService;
+import com.css544.blog.service.PostService;
+import com.css544.blog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

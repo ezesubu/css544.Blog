@@ -1,6 +1,6 @@
-package com.reljicd.util;
+package com.css544.blog.util;
 
-import com.reljicd.model.Post;
+import com.css544.blog.model.Post;
 import org.springframework.data.domain.Page;
 
 /**

@@ -1,6 +1,6 @@
-package com.reljicd.service;
+package com.css544.blog.service;
 
-import com.reljicd.model.User;
+import com.css544.blog.model.User;
 
 import java.util.Optional;
 

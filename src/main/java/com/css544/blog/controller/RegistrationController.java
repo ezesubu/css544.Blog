@@ -1,4 +1,4 @@
-package com.reljicd.controller;
+package com.css544.blog.controller;
 
 import com.reljicd.model.User;
 import com.reljicd.service.UserService;

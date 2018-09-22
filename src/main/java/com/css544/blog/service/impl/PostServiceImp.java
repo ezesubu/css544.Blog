@@ -1,9 +1,9 @@
-package com.reljicd.service.impl;
+package com.css544.blog.service.impl;
 
-import com.reljicd.model.Post;
-import com.reljicd.model.User;
-import com.reljicd.repository.PostRepository;
-import com.reljicd.service.PostService;
+import com.css544.blog.model.Post;
+import com.css544.blog.model.User;
+import com.css544.blog.repository.PostRepository;
+import com.css544.blog.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

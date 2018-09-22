@@ -1,4 +1,4 @@
-package com.reljicd.model;
+package com.css544.blog.model;
 
 import javax.persistence.*;
 import java.util.Collection;

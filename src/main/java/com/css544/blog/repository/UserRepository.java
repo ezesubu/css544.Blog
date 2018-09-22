@@ -1,6 +1,6 @@
-package com.reljicd.repository;
+package com.css544.blog.repository;
 
-import com.reljicd.model.User;
+import com.css544.blog.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 

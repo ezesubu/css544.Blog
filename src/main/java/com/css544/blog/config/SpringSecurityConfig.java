@@ -1,4 +1,5 @@
-package com.reljicd.config;
+package com.css544.blog.config;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

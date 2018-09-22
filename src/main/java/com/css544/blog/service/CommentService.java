@@ -1,6 +1,6 @@
-package com.reljicd.service;
+package com.css544.blog.service;
 
-import com.reljicd.model.Comment;
+import com.css544.blog.model.Comment;
 
 public interface CommentService {
 

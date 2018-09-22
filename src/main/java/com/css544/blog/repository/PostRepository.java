@@ -1,7 +1,6 @@
-package com.reljicd.repository;
-
-import com.reljicd.model.Post;
-import com.reljicd.model.User;
+package com.css544.blog.repository;
+import com.css544.blog.model.Post;
+import com.css544.blog.model.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
