@@ -22,5 +22,8 @@ public class BlogErrorController implements ErrorController {
         return new ModelAndView("/403");
     }
 
-x
+    @Override
+    public String getErrorPath() {
+        return PATH;
+    }
 }
