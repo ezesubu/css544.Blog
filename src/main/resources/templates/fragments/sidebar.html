@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+  ~ This its a project from Ezequiel Suarez Buitrago 
+  -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+</head>
+<body>
+
+<div id="sidebar" class="sidebar" th:fragment="sidebar">
+    <div class="menu-left-part">
+        <div class="search-holder">
+            <label>
+                <!--<input type="search" class="search-field" placeholder="Type here to search..." value="" name="s" title="Search for:">-->
+            </label>
+        </div>
+        <div class="site-info-holder">
+            <h1 class="site-title"  th:text="#{set.nameapp}">Suppablog</h1>
+            <p class="site-description" th:text="#{set.descriptionapp}"></p>
+        </div>
+        <nav id="header-main-menu">
+            <ul class="main-menu sm sm-clean">
+
+                <li>
+                    <a th:href="@{/home}" th:text="#{menu.blog}"></a>
+                </li>
+                <li  sec:authorize="!isAuthenticated()">
+                    <a th:href="@{/registration}" th:text="#{menu.registratrion}"></a>
+                </li>
+                <li sec:authorize="!isAuthenticated()">
+                    <a th:href="@{/login}" th:text="#{menu.login}"></a>
+                </li>
+                <li sec:authorize="hasRole('USER')">
+                    <a th:href="@{'/blog/' + ${#authentication.getName()}}" th:text="#{menu.myBlog}"></a>
+                </li>
+                <li sec:authorize="hasRole('USER')">
+                    <a th:href="@{/newPost}" th:text="#{menu.newPost}"></a>
+                </li>
+                <li sec:authorize="isAuthenticated()" >
+                    <a th:href="@{/logout}" th:text="#{menu.signOut}"></a>
+                </li>
+            </ul>
+        </nav>
+        <footer>
+            <div class="footer-info">
+                <a  th:href="@{/home(lang=en)}" th:text="#{lang.eng}"></a>
+                <i class="fa fa-heart"></i>
+                <a  th:href="@{/home(lang=de)}" th:text="#{lang.de}"></a>
+            </div>
+        </footer>
+    </div>
+    <div class="menu-right-part">
+        <div class="logo-holder">
+            <a class="navbar-brand" th:href="@{/home}">
+                <img th:src="@{images/logo.png}" />
+            </a>
+        </div>
+        <div class="toggle-holder">
+            <div id="toggle">
+                <div class="menu-line"></div>
+            </div>
+        </div>
+
+        <div class="fixed scroll-top"><i class="fa fa-caret-square-o-up" aria-hidden="true"></i></div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+</body>
+</html>

@@ -1,31 +1,53 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
 <head>
+    <script src="../../static/js/imagesloaded.pkgd.js"></script>
 </head>
 <body>
 <div th:fragment="footer">
 
-    <hr/>
+    <!--<hr/>-->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <span sec:authorize="isAuthenticated()">
-                | Logged user: <span sec:authentication="name"></span> |
-                Roles: <span sec:authentication="principal.authorities"></span> |
-                <a th:href="@{/logout}">Sign Out</a>
-            </span>
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-sm-12 text-center">-->
+                <!--<span sec:authorize="isAuthenticated()">-->
+                <!--| Logged user: <span sec:authentication="name"></span> |-->
+                <!--Roles: <span sec:authentication="principal.authorities"></span> |-->
+                <!--<a th:href="@{/logout}">Sign Out</a>-->
+            <!--</span>-->
 
-                <div>
-                    <p class="text-center">&copy; 2018 Group 10</p>
-                </div>
+                <!--<div>-->
+                    <!--<p class="text-center">&copy; 2018 Group 10</p>-->
+                <!--</div>-->
 
-            </div>
-        </div>
-    </div>
-
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <script type="text/javascript" th:href="@{/js/main.js}"
+            src="../../js/main.js"></script>
+    <script type="text/javascript" th:href="@{/js/jquery.js}"
+            src="../../js/jquery.js"></script>
     <script type="text/javascript"
-            src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            src="webjars/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" th:href="@{/js/imagesloaded.pkgd.js}"
+            src="../../js/imagesloaded.pkgd.js"></script>
+    <script type="text/javascript" th:href="@{/js/jquery.nicescroll.min.js}"
+            src="../../js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" th:href="@{/js/jquery.carouFredSel-6.0.0-packed.js}"
+            src="../../js/jquery.carouFredSel-6.0.0-packed.js"></script>
+    <script type="text/javascript" th:href="@{/js/jquery.easing.1.3.js}"
+            src="../../js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" th:href="@{/js/jquery.mousewheel.min.js}"
+            src="../../js/jquery.mousewheel.min.js">
+    </script> <script type="text/javascript" th:href="@{/js/jquery.nicescroll.min.js}"
+            src="../../js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" th:href="@{/js/jquery.smartmenus.min.js}"
+            src="../../js/jquery.smartmenus.min.js"></script>
+    <script type="text/javascript" th:href="@{/js/jquery.touchSwipe.min.js}"
+            src="../../js/jquery.touchSwipe.min.js"></script>
+
+
     <script type="text/javascript">
         $(document).ready(function() {
             $("#locales").change(function () {
