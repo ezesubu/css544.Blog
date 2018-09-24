@@ -26,6 +26,16 @@
 
     <script type="text/javascript"
             src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#locales").change(function () {
+                var selectedOption = $('#locales').val();
+                if (selectedOption !== ''){
+                        window.location.replace('home?lang=' + selectedOption);
+                }
+            });
+        });
+    </script>
 
 </div>
 </body>

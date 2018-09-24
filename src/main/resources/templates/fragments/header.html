@@ -3,7 +3,6 @@
 <head>
     <div th:fragment="header-css">
 
-        <title>Spring Boot Blog</title>
 
         <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
               th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"
@@ -21,13 +20,23 @@
     <!-- this is header -->
     <nav class="navbar navbar-inverse">
         <div class="container">
+
             <div class="navbar-header">
-                <a class="navbar-brand" th:href="@{/home}">Blog App</a>
+                <a class="navbar-brand" th:href="@{/home}">  <span th:text="#{set.nameapp}"></span></a>
             </div>
             <div id="navbar" class="collapse navbar-collapse navbar-right">
                 <!-- show registration only if user is not yet authenticated -->
                 <ul class="nav navbar-nav" sec:authorize="!isAuthenticated()">
                     <li class="active"><a th:href="@{/registration}">Registration</a></li>
+                </ul>
+                <ul class="nav navbar-nav" sec:authorize="!isAuthenticated()">
+                    <li class="active">
+                        <select id="locales">
+                            <option value=""></option>
+                            <option value="en" th:text="#{lang.eng}"></option>
+                            <option value="de" th:text="#{lang.de}"></option>
+                        </select>
+                    </li>
                 </ul>
                 <!-- show login only if user is not yet authenticated -->
                 <ul class="nav navbar-nav" sec:authorize="!isAuthenticated()">

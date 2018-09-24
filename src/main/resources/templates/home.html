@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <!--<title>Spring Boot Thymeleaf + Spring Security</title>-->
 
     <div th:replace="/fragments/header :: header-css"/>
 
@@ -11,7 +10,7 @@
 <div th:replace="/fragments/header :: header"/>
 
 <div class="container">
-
+    <h1 th:text="#{welcome.message}"></h1>
     <div th:replace="/fragments/posts :: posts"/>
 
     <div th:replace="/fragments/pagination :: pagination(URLparameter='/home')"/>
