@@ -15,20 +15,20 @@
 
             <span th:if="${pager.hasPrevious()}">
                 <a class="pageLink"
-                   th:href="@{${baseUrl}(page=1)}">&laquo; first</a>
+                   th:href="@{${baseUrl}(page=1)}" th:text="#{pagination.first}"></a>
                 <a class="pageLink"
-                   th:href="@{${baseUrl}(page=${pager.getPageIndex() - 1})}"> previous</a>
+                   th:href="@{${baseUrl}(page=${pager.getPageIndex() - 1})}" th:text="#{pagination.previous}"> </a>
             </span>
 
             <span th:if="${pager.getTotalPages() != 1}"
-                  th:text="'Page ' + ${pager.getPageIndex()} + ' of ' + ${pager.getTotalPages()} + '.'">
+                  th:text="#{pagination.page} "+ ${pager.getPageIndex()} + #{pagination.of} +${pager.getTotalPages()} + '.'">
             </span>
 
             <span th:if="${pager.hasNext()}">
                 <a class="pageLink"
-                   th:href="@{${baseUrl}(page=${pager.getPageIndex() + 1})}">next</a>
+                   th:href="@{${baseUrl}(page=${pager.getPageIndex() + 1})}" th:text="#{pagination.next}"></a>
                 <a class="pageLink"
-                   th:href="@{${baseUrl}(page=${pager.getTotalPages()})}">last &raquo;</a>
+                   th:href="@{${baseUrl}(page=${pager.getTotalPages()})}" th:text="#{pagination.last}"> &raquo;</a>
             </span>
         </span>
     </div>

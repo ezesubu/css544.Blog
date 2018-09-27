@@ -29,8 +29,7 @@ public class PostController {
     }
 
     @RequestMapping(value = "/newPost", method = RequestMethod.GET)
-    public String newPost(Principal principal,
-                          Model model) {
+    public String newPost(Principal principal, Model model) {
 
         Optional<User> user = userService.findByUsername(principal.getName());
 
@@ -48,8 +47,7 @@ public class PostController {
     }
 
     @RequestMapping(value = "/newPost", method = RequestMethod.POST)
-    public String createNewPost(@Valid Post post,
-                                BindingResult bindingResult) {
+    public String createNewPost(@Valid Post post,  BindingResult bindingResult) {
 
         if (bindingResult.hasErrors()) {
             return "/postForm";
@@ -60,9 +58,7 @@ public class PostController {
     }
 
     @RequestMapping(value = "/editPost/{id}", method = RequestMethod.GET)
-    public String editPostWithId(@PathVariable Long id,
-                                 Principal principal,
-                                 Model model) {
+    public String editPostWithId(@PathVariable Long id, Principal principal, Model model) {
 
         Optional<Post> optionalPost = postService.findForId(id);
 
