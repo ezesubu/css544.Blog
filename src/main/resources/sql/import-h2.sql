@@ -2,15 +2,15 @@
 -- password in plaintext: "password"
 INSERT INTO user (user_id, password, email, username, name, last_name, active)
 VALUES
-  (1, '$2a$06$OAPObzhRdRXBCbk7Hj/ot.jY3zPwR8n7/mfLtKIgTzdJa4.6TwsIm', 'user@mail.com', 'user', 'Name', 'Surname',
+  (1, '$2a$06$OAPObzhRdRXBCbk7Hj/ot.jY3zPwR8n7/mfLtKIgTzdJa4.6TwsIm', 'ezequiel@mail.com', 'ezequiel', 'ezequiel', 'Suarez',
    1);
 -- password in plaintext: "password"
 INSERT INTO user (user_id, password, email, username, name, last_name, active)
 VALUES
-  (2, '$2a$06$OAPObzhRdRXBCbk7Hj/ot.jY3zPwR8n7/mfLtKIgTzdJa4.6TwsIm', 'johndoe@gmail.com', 'johndoe', 'John', 'Doe', 1);
+  (2, '$2a$06$OAPObzhRdRXBCbk7Hj/ot.jY3zPwR8n7/mfLtKIgTzdJa4.6TwsIm', 'aron@gmail.com', 'aron', 'aron', 'Afewerki', 1);
 -- password in plaintext: "password"
 INSERT INTO user (user_id, password, email, username, name, last_name, active)
-VALUES (3, '$2a$06$OAPObzhRdRXBCbk7Hj/ot.jY3zPwR8n7/mfLtKIgTzdJa4.6TwsIm', 'ana@mail.com', 'ana', 'Ana', 'Surname', 1);
+VALUES (3, '$2a$06$OAPObzhRdRXBCbk7Hj/ot.jY3zPwR8n7/mfLtKIgTzdJa4.6TwsIm', 'michael@mail.com', 'michael', 'michael', 'Tesfay', 1);
 
 -- Roles
 INSERT INTO role (role_id, role)
