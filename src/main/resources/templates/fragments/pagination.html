@@ -21,7 +21,7 @@
             </span>
 
             <span th:if="${pager.getTotalPages() != 1}"
-                  th:text="#{pagination.page} "+ ${pager.getPageIndex()} + #{pagination.of} +${pager.getTotalPages()} + '.'">
+                  th:text="#{pagination.page}  +' ' + ${pager.getPageIndex()} + ' ' + #{pagination.of} + ' ' +${pager.getTotalPages()} + '.'">
             </span>
 
             <span th:if="${pager.hasNext()}">
